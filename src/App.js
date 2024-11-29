@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import FetchData from './components/FetchData'; // FetchData 컴포넌트 추가
 
 function App() {
   return (
@@ -18,8 +20,14 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* FetchData 컴포넌트를 App에 추가 */}
+      <main>
+        <h1>React Axios Example</h1>
+        <FetchData />
+      </main>
     </div>
   );
 }
 
 export default App;
+
